@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- External Stylesheet -->
+    <script
+      src="https://kit.fontawesome.com/eb42c3a17f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App by Warish</title>
+  </head>
+  <body>
+    <div class="container" id="background">
+      <div class="weather-app">
+        <!-- Search Container -->
+        <div class="search-container">
+          <!--List of cities -->
+          <div class="flex-col">
+            <div class="card-body">
+              <h2>Get the Daily Weather Update of the Popular Cities</h2>
+              <!-- List of some cities -->
+              <ul class="cities">
+                <li id="mumbai">Mumbai</li>
+                |
+                <li id="london">London</li>
+                |
+                <li id="newyork">New York</li>
+                |
+                <li id="delhi">Delhi</li>
+                |
+                <li id="tokyo">Tokyo</li>
+                |
+                <li id="lahore">Lahore</li>
+                |
+                <li id="sydney">Sydney</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Search Form Section -->
+          <div class="flex-row">
+            <form id="search-form">
+              <div class="flex-row">
+                <!-- City Input Field -->
+                <input
+                  class="input-btn"
+                  type="search"
+                  id="input-city"
+                  class="form-control shadow-sm"
+                  placeholder="Enter City or code"
+                  autocomplete="off"
+                />
+                <!-- Search Button -->
+                <input type="submit" class="location-btn" value="Search" />
+              </div>
+              <!-- Current Location Section -->
+              <div class="location">
+                <h3>Not able to find the location?</h3>
+                <button class="location-btn" id="current-location">
+                  Use Current Location
+                </button>
+                <!-- Error Message Display -->
+                <div id="error-message"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Main body (Weather Display) -->
+        <div class="flex-row">
+          <!-- Left side -->
+          <div class="card1 current-city">
+            <h1 id="city"></h1>
+            <ul class="datetime">
+              <li id="last-update">Last updated:</li>
+              <li id="day"></li>
+              <li id="date"></li>
+              <li><span id="clock"></span> <span id="amPm"></span></li>
+            </ul>
+          </div>
+          <!-- Right side -->
+
+          <div class="card1">
+            <!-- upper part-->
+            <div class="flex-row">
+              <div class="temperature-section">
+                <div class="clearfix temperature-header">
+                  <img src="" alt="" id="icon" class="float-left" />
+                  <div class="temperature-part">
+                    <span id="temperature"></span>
+                    <span class="units"
+                      ><a href="#" id="toCelcius" class="active">°C</a> |
+                      <a href="#" id="toFahrenheit">°F</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--lower part-->
+            <div class="flex-row">
+              <div class="flex-col">
+                <p id="description"></p>
+                <ul class="weather flex-row">
+                  <li>Cloudines: <span id="cloudines"></span>%</li>
+                  <li>Feels like: <span id="feels-like"></span>°</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>km/h</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- weather prediction-->
+        <div class="weather-forcast-container">
+          <div class="flex-row week-prediction">
+            <div class="card">
+              <div class="flex-row" id="forecast"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

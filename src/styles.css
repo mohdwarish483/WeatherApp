@@ -1,0 +1,308 @@
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: rgb(11, 105, 114);
+  font-size: 20px;
+}
+
+h3 {
+  color: rgb(238, 238, 238);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px;
+  max-width: 100%;
+  padding: 0 12px;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+a {
+  color: rgb(11, 105, 114);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.input-btn {
+  background-color: rgb(250, 251, 252);
+  display: block;
+  outline: none;
+  width: 200px;
+  height: 45px;
+  border: 1px solid rgb(117, 117, 117);
+  line-height: 45px;
+  padding: 0px 20px;
+  border-radius: 6px;
+  color: rgb(117, 117, 117);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0px 30px;
+  text-align: left;
+}
+/* .input-btn:hover {
+  background-color: rgb(235, 236, 240);
+} */
+.input-btn:focus {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(11, 105, 114);
+  outline: 1px solid rgb(11, 105, 114);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.search-container {
+  /* background-color: rgb(145, 145, 171); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #57595f;
+}
+ul.cities {
+  color: rgb(11, 105, 114);
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+ul.cities li {
+  color: rgb(11, 105, 114);
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul.cities li:hover {
+  color: #192c5c;
+  text-decoration: underline;
+}
+.form-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+#error-message {
+  display: none;
+  color: red;
+}
+.location h3 {
+  color: #000000;
+}
+.location-btn {
+  display: block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0px 30px;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 6px;
+  /* background-color: #0070f3; */
+  background-color: rgb(11, 105, 114);
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+}
+.location-btn:hover {
+  background: rgba(11, 105, 114, 0.9);
+  box-shadow: 0 6px 20px rgb(11, 105, 114 / 23%);
+}
+li#last-update {
+  font-size: 13px;
+}
+li#day {
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+p#description {
+  color: #434752;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.weather-forcast-container {
+  background-color: transparent;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
+ul.weather {
+  color: #434752;
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+ul.weather li {
+  display: inline-block;
+}
+
+img.forecast {
+  display: block;
+  margin: -10px auto;
+  width: 70px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.weather-app {
+  background: #faecf3d9;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.card1 {
+  border: 0;
+  background: transparent;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 16px 0px;
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+  min-height: 160px;
+  border-radius: 20px;
+}
+.card2 {
+  border: 0;
+  background: rgb(11, 105, 114) !important;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 16px 0px;
+  display: block;
+  padding: 16px;
+  height: auto;
+  border-radius: 20px;
+}
+.form-control {
+  display: inline;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+#clock {
+  margin: 0;
+  font-size: 32px;
+}
+
+#amPm {
+  position: relative;
+  top: -10px;
+}
+
+.temperature-section img {
+  float: left;
+  margin-left: -5px;
+  width: 85px;
+}
+.temperature-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8px;
+  width: 100%;
+}
+
+.temperature-section .temperature-part {
+  float: left;
+}
+
+.temperature-part span {
+  color: rgb(11, 105, 114);
+  float: left;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 2;
+}
+
+.temperature-part .units {
+  font-size: 16px;
+  left: 5px;
+  position: relative;
+  top: 15px;
+}
+
+.week-prediction {
+  text-align: center;
+}
+.prediction {
+  font-size: 13px;
+}
+
+.units .active {
+  color: #000000;
+  cursor: default;
+  font-weight: bold;
+}
+
+.units .active:hover {
+  text-decoration: none;
+  color: rgb(11, 105, 114);
+}
